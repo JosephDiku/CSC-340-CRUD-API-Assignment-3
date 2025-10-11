@@ -16,45 +16,45 @@ public class HawkController {
     private HawkService hawkService;
 
     // Endpoint to get list of all hawks
-    @GetMapping("/hawks")
+    @GetMapping("/hawk")
     public Object getAllHawks() {
         return hawkService.getAllHawks();
     }
 
     // Endpoint to get a hawk by ID
-    @GetMapping("/hawks/{id}")
+    @GetMapping("/hawk/{id}")
     public Hawk getHawkById(@PathVariable long id) {
         return hawkService.getHawkById(id);
     }
 
     // Endpoint to add a new hawk
-    @PostMapping("/hawks")
+    @PostMapping("/hawk")
     public Object addHawk(@RequestBody Hawk hawk) {
         return hawkService.addHawk(hawk);
     }  
 
     // Endpoint to update an existing hawk
-    @PostMapping("/hawks/{id}")
+    @PostMapping("/hawk/{id}")
     public Hawk updateHawk(@PathVariable Long id, @RequestBody Hawk hawk) {
         hawkService.updateHawk(id, hawk);
         return hawkService.getHawkById(id);
     }
 
     // Endpoint to delete a hawk
-    @DeleteMapping("/hawks/{id}")
+    @DeleteMapping("/hawk/{id}")
     public Object deleteHawk(@PathVariable Long id) {
         hawkService.deleteHawk(id);
         return hawkService.getAllHawks();
     }
 
     // Endpoint to get hawks by origin
-    @GetMapping("/hawks/origin/{origin}")
+    @GetMapping("/hawk/origin/{origin}")
     public Object getHawkByOrigin(@PathVariable String origin) {
         return hawkService.getHawkByOrigin(origin);
     }
 
     // Endpoint to get hawks by name
-    @GetMapping("/hawks/name")
+    @GetMapping("/hawk/name")
     public Object getHawkByName(@RequestParam String key) {
         if (key != null){
             return hawkService.getHawkByName(key);

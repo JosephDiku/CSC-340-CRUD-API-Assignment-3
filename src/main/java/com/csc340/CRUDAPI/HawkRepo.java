@@ -11,10 +11,10 @@ public interface HawkRepo extends JpaRepository<Hawk, Long> {
 
     List<Hawk> findHawksByOrigin (String origin);
    
-    @Query(value = "select * from hawks where population >= ?1", nativeQuery = true)
+    @Query(value = "select * from hawk where population >= ?1", nativeQuery = true)
     List<Hawk> findHawksByPopulation(int population);
 
-    @Query(value = "select * from hawks where name like %?1%", nativeQuery = true)
+    @Query(value = "select * from hawk where name like %?1%", nativeQuery = true)
     List<Hawk> findHawksByNameContaining(String name);
 }
 
