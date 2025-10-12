@@ -55,7 +55,7 @@ public class HawkController {
     }
 
     // Endpoint to get hawks by name
-    @GetMapping("/name")
+    @GetMapping("hawk/name")
     public Object getHawkByName(@RequestParam String key) {
         if (key != null && !key.isEmpty()){
             return hawkService.getHawkByName(key);

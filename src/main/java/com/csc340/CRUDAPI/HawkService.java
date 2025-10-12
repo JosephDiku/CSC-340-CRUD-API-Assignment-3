@@ -2,6 +2,7 @@ package com.csc340.CRUDAPI;
 
 import java.io.IOException;
 import java.io.File;
+import java.util.List;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
@@ -27,7 +28,7 @@ public class HawkService {
     }
 
     // Method to get hawks by name
-    public Object getHawkByName(String name) {
+    public List<Hawk> getHawkByName(String name) {
         return hawkRepo.findHawksByNameContaining(name);
     }
 
