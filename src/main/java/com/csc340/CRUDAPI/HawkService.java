@@ -23,8 +23,8 @@ public class HawkService {
     }
 
     // Method to get a hawk by ID, returns null if not found
-    public Hawk getHawkById(@PathVariable long HawkId) {
-        return hawkRepo.findById(HawkId).orElse(null);
+    public Hawk getHawkById(@PathVariable long hawkId) {
+        return hawkRepo.findById(hawkId).orElse(null);
     }
 
     // Method to get hawks by name

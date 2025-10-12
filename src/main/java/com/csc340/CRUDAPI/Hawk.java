@@ -14,7 +14,7 @@ public class Hawk {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private Long animalId;
+    private Long hawkId;
 
     @Column(nullable = false)
     private String name;
@@ -28,8 +28,8 @@ public class Hawk {
     public Hawk() {
     }  
 
-    public Hawk(Long animalId, String name, String description, String origin, int population) {
-        this.animalId = animalId;
+    public Hawk(Long hawkId, String name, String description, String origin, int population) {
+        this.hawkId = hawkId;
         this.name = name;
         this.description = description;
         this.origin = origin;
@@ -43,12 +43,12 @@ public class Hawk {
         this.population = population;
     }
 
-    public Long getAnimalId() {
-        return animalId;
+    public Long getHawkId() {
+        return hawkId;
     }
 
-    public void setAnimalId(Long animalId) {
-        this.animalId = animalId;
+    public void setHawkId(Long hawkId) {
+        this.hawkId = hawkId;
     }
 
     public String getName() {
