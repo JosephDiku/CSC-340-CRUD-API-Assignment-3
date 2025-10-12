@@ -8,6 +8,7 @@ import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RestController;
 import org.springframework.web.bind.annotation.DeleteMapping;
+import org.springframework.web.bind.annotation.PutMapping;
 
 @RestController
 public class HawkController {
@@ -34,7 +35,7 @@ public class HawkController {
     }  
 
     // Endpoint to update an existing hawk
-    @PostMapping("/hawk/{id}")
+    @PutMapping("/hawk/{id}")
     public Hawk updateHawk(@PathVariable Long id, @RequestBody Hawk hawk) {
         hawkService.updateHawk(id, hawk);
         return hawkService.getHawkById(id);
