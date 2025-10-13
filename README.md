@@ -22,6 +22,9 @@
     - Paste it as a value for the property `spring.datasource.url`. No quotation marks.
 - Build and run the main class. You should see a new table created in the Neon database.
 
+## Link to Presentation
+https://uncg-my.sharepoint.com/:v:/g/personal/jmdiku_uncg_edu/EVgcleT8W-dCl93iRNfsaDgBJpmwiyXcFaodx57ymL_F6Q?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJPbmVEcml2ZUZvckJ1c2luZXNzIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXciLCJyZWZlcnJhbFZpZXciOiJNeUZpbGVzTGlua0NvcHkifX0&e=ET61fX
+
 ## API Endpoints
 Base URL: [`http://localhost:8080/hawk`](http://localhost:8080/hawk)
 
