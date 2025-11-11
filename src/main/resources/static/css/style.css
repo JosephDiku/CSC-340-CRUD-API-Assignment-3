@@ -1,0 +1,143 @@
+h1{
+    font-size: 50px;
+    background-color: #2E6F40;
+    text-align: center;
+    color: aliceblue;
+}
+
+h2{
+    text-align: center;
+    font-size: 60px;
+}
+
+a{
+    text-decoration: none;
+}
+
+.gallerycontainer{
+    text-align: center;
+}
+
+.gallery{
+    text-align: center;
+    display: inline-table;
+    border: 1px solid grey;
+    margin: 5px 20px 20px 20px;
+    width: 300px;
+}
+
+.gallery .desc{
+    text-align:center;
+    overflow-wrap: normal;
+}
+
+.gallery img{
+    width: 300px;
+    height: auto;
+}
+
+.gallery.button{
+    text-align: center;
+}
+
+.button{
+    border: none;
+    background-color: white;
+    text-align: center;
+    cursor: crosshair;
+    display: inline-block;
+}
+
+.button1{
+    border: 1px solid;
+    cursor: pointer;
+    margin: 10px;
+    font-family: inherit;
+}
+
+.button2{
+    border: 1px solid;
+    cursor: pointer;
+    margin: 10px;
+    font-family: inherit;
+}
+
+.button1:hover{
+    background-color: #2E6F40;
+    color: white;
+}
+
+.navbar{
+  background-color: white;
+  overflow: hidden;
+  border: 2px solid #2E6F40;
+}
+
+.navbar a{
+  float: left;            
+  display: block;
+  color: #2E6F40;
+  justify-content: space-between;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+.navbar a:hover{
+  background-color: #2E6F40;
+  color: white;
+}
+
+.hawksdetails{
+    text-align: center;
+    margin: 20px auto;
+    width: 100%;
+}
+
+.hawksdetails img{
+    display: inline-block;
+    margin: 10px;
+    width: 400px;
+    height: auto;
+}
+
+.hawksdetails .desc{
+    max-width: 800px;
+    padding: 5px;
+    margin: 10px auto;
+    text-align: justify;
+    border: 1px solid #2E6F40;
+}
+
+.navbar .searchcontainer{
+    padding: 8px;
+    display: flex;
+    align-items: center;
+}
+
+.navbar .searchcontainer input{
+    padding: 5px;
+    border: 2px solid #2E6F40;
+    border-radius: 4px 4px 4px 4px;
+}
+
+.navbar .searchcontainer button{
+    padding: 5px;
+    border: 2px solid #2E6F40;
+    background-color: white;
+    cursor: pointer;
+    border-radius: 4px 4px 4px 4px;
+}
+
+.navbar .searchcontainer button:hover{
+    background-color: #2E6F40;
+    color: white;
+}
+
+.aboutcontainer{
+    padding: 20px;
+    border: 2px solid #2E6F40;
+    margin-top: 10px;
+    text-align: justify;
+
+}
