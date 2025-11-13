@@ -10,6 +10,7 @@ import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.DeleteMapping;
 import org.springframework.web.bind.annotation.PutMapping;
 import org.springframework.stereotype.Controller;
+import org.springframework.ui.Model;
 
 //@RestController
 
@@ -30,7 +31,7 @@ public class HawkController {
 
     // Endpoint to get a hawk by ID
     @GetMapping("/hawk/{id}")
-    public Hawk getHawkById(@PathVariable long id, Model model) {
+    public String getHawkById(@PathVariable long id, Model model) {
         //return hawkService.getHawkById(id);
         model.addAttribute("hawk", hawkService.getHawkById(id));
         model.addAttribute("title", "Hawk #: " + id);
