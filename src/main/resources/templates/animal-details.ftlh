@@ -21,7 +21,7 @@
     </nav>
 
 <div>
-    <h2> Red-Tailed Hawk</h2>
+    <h2>${hawk.name}</h2>
 </div>
 
 <div class="hawksdetails">

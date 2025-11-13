@@ -21,14 +21,20 @@ public class HawkController {
 
     // Endpoint to get list of all hawks
     @GetMapping("/hawk")
-    public Object getAllHawks() {
-        return hawkService.getAllHawks();
+    public Object getAllHawks(Model model) {
+        //return hawkService.getAllHawks();
+        model.addAttribute("hawksList", hawkService.getAllHawks());
+        model.addAttribute("title", "Hawk List");
+        return "animal-list";
     }
 
     // Endpoint to get a hawk by ID
     @GetMapping("/hawk/{id}")
-    public Hawk getHawkById(@PathVariable long id) {
-        return hawkService.getHawkById(id);
+    public Hawk getHawkById(@PathVariable long id, Model model) {
+        //return hawkService.getHawkById(id);
+        model.addAttribute("hawk", hawkService.getHawkById(id));
+        model.addAttribute("title", "Hawk #: " + id);
+        return "animal-details";
     }
 
     // Endpoint to add a new hawk
